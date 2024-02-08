@@ -109,7 +109,7 @@ public class MatrixMenu {
                     checkDiagonal();
                     break;
                 case 'g':
-                    System.out.println("The End.");
+                    System.out.println("Thank you!");
                     break;
                 default:
                     System.out.println("Invalid choice. Please try again.");
