@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Matrix {
+public class Matrix { //hiii
     private int rows, cols;
     private double data[][];
 
