@@ -49,13 +49,13 @@ class PayPal implements PaymentMethod {
 public class Payment {
     public static void main(String[] args) {
 
-        CreditCard creditCard = new CreditCard("1234 5678 9012 3456", "12/24", "123");
+        PaymentMethod creditCard = new CreditCard("1234 5678 9012 3456", "12/24", "123");
         creditCard.pay(1000.0);
         creditCard.cancel();
 
         System.out.println();
 
-        PayPal payPal = new PayPal("example@example.com", "password");
+        PaymentMethod payPal = new PayPal("example@example.com", "password");
         payPal.pay(1500.0);
         payPal.cancel();
     }
