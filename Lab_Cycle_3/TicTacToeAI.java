@@ -47,7 +47,7 @@ class ComputerPlayer implements Player {
             return;
         }
         
-        int[] blockingMove = findWinningMove(game, 1 - currentPlayer);
+        int[] blockingMove = findWinningMove(game, -1 * currentPlayer);
         if (blockingMove != null) {
             game.makeMove(blockingMove[0], blockingMove[1], currentPlayer);
             return;
